@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title description">
+  <title id="title">InstaProxy</title>
+  <desc id="description">Scrape. Check. Keep the signal. A dark terminal-inspired banner with cyan and lime accents and a network diagram connecting four proxy protocols to a checker and saved results.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 H 0 V 32" fill="none" stroke="#223140" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5ce1e6"/>
+      <stop offset="1" stop-color="#c0ff72"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#314b5c"/>
+      <stop offset="1" stop-color="#5ce1e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" rx="20" fill="#0b121a"/>
+  <rect x="752" y="1" width="447" height="398" rx="20" fill="url(#grid)" opacity="0.65"/>
+  <rect x="1" y="1" width="1198" height="398" rx="19" fill="none" stroke="#273744"/>
+  <path d="M 40 56 H 1160" stroke="#273744"/>
+  <circle cx="48" cy="30" r="5" fill="#5ce1e6"/>
+  <circle cx="68" cy="30" r="5" fill="#c0ff72"/>
+  <circle cx="88" cy="30" r="5" fill="#536579"/>
+  <text x="116" y="35" fill="#a5b5c6" font-family="Consolas, monospace" font-size="13" letter-spacing="2">INSTAPROXY / PROXY HEALTH CHECKER</text>
+  <text x="1158" y="35" text-anchor="end" fill="#c0ff72" font-family="Consolas, monospace" font-size="12" letter-spacing="1">RUST CLI</text>
+  <text x="58" y="112" fill="#c0ff72" font-family="Consolas, monospace" font-size="13" letter-spacing="3">SCRAPE. CHECK. KEEP THE SIGNAL.</text>
+  <text x="53" y="213" fill="#f3f8fc" font-family="Segoe UI, Arial, sans-serif" font-size="98" font-weight="800" letter-spacing="-4">Insta<tspan fill="#5ce1e6">Proxy</tspan></text>
+  <rect x="60" y="237" width="84" height="4" rx="2" fill="url(#accent)"/>
+  <text x="59" y="282" fill="#a5b5c6" font-family="Segoe UI, Arial, sans-serif" font-size="22">Public lists in. Clear status out.</text>
+  <g font-family="Consolas, monospace" font-size="13">
+    <rect x="60" y="326" width="143" height="30" rx="6" fill="#11232b" stroke="#274650"/>
+    <text x="131" y="346" text-anchor="middle" fill="#5ce1e6">LIVE RESULTS</text>
+    <rect x="215" y="326" width="129" height="30" rx="6" fill="#14231c" stroke="#344a36"/>
+    <text x="279" y="346" text-anchor="middle" fill="#c0ff72">YAML CONFIG</text>
+    <rect x="356" y="326" width="157" height="30" rx="6" fill="#131d28" stroke="#273744"/>
+    <text x="434" y="346" text-anchor="middle" fill="#a5b5c6">PROXY HISTORY</text>
+  </g>
+  <g fill="none" stroke="url(#route)" stroke-width="2">
+    <path d="M 862 130 H 896 Q 910 130 910 144 V 204 Q 910 218 924 218 H 958"/>
+    <path d="M 862 188 H 900 Q 910 188 910 198 V 208 Q 910 218 924 218"/>
+    <path d="M 862 248 H 900 Q 910 248 910 238 V 228 Q 910 218 924 218"/>
+    <path d="M 862 306 H 896 Q 910 306 910 292 V 232 Q 910 218 924 218"/>
+  </g>
+  <g font-family="Consolas, monospace" font-size="13" text-anchor="middle">
+    <rect x="778" y="113" width="84" height="34" rx="7" fill="#101e29" stroke="#314b5c"/>
+    <text x="820" y="135" fill="#a5b5c6">HTTP</text>
+    <rect x="778" y="171" width="84" height="34" rx="7" fill="#101e29" stroke="#314b5c"/>
+    <text x="820" y="193" fill="#a5b5c6">HTTPS*</text>
+    <rect x="778" y="231" width="84" height="34" rx="7" fill="#101e29" stroke="#314b5c"/>
+    <text x="820" y="253" fill="#a5b5c6">SOCKS4</text>
+    <rect x="778" y="289" width="84" height="34" rx="7" fill="#101e29" stroke="#314b5c"/>
+    <text x="820" y="311" fill="#a5b5c6">SOCKS5</text>
+  </g>
+  <circle cx="996" cy="218" r="48" fill="#0b121a" stroke="#203b49" stroke-dasharray="3 7"/>
+  <rect x="962" y="184" width="68" height="68" rx="17" fill="#112b35" stroke="#5ce1e6" stroke-width="2"/>
+  <path d="M 976 219 H 986 L 992 205 L 1001 232 L 1007 219 H 1017" fill="none" stroke="#5ce1e6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 1045 218 H 1080 M 1073 212 L 1080 218 L 1073 224" fill="none" stroke="#c0ff72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1090" y="192" width="52" height="52" rx="14" fill="#17261d" stroke="#c0ff72"/>
+  <path d="M 1104 218 L 1113 226 L 1128 210" fill="none" stroke="#c0ff72" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Consolas, monospace" font-size="12" text-anchor="middle" letter-spacing="1">
+    <text x="996" y="288" fill="#5ce1e6">CHECK</text>
+    <text x="1116" y="288" fill="#c0ff72">SAVE</text>
+  </g>
+  <text x="778" y="361" fill="#8b9faf" font-family="Consolas, monospace" font-size="11">* HTTPS list label, not TLS to proxy.</text>
+</svg>

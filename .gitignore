@@ -1,0 +1,27 @@
+# Build output and runtime data
+/target/
+/results/
+history.txt
+proxies.txt
+*.log
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Temporary files and patch backups
+*.tmp
+*.bak
+*.orig
+*.rej

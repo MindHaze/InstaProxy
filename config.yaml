@@ -1,0 +1,50 @@
+# InstaProxy configuration.
+# Commands: scrape-check, scrape, or check.
+# Relative file/directory paths are resolved from this YAML file's directory,
+# not the directory where you launch InstaProxy. Absolute paths are unchanged.
+
+# Maximum time spent on one proxy check, including handshake.
+max_timeout_ms: 10000
+# Source download timeout.
+source_timeout_ms: 10000
+# Maximum number of concurrent proxy checks.
+threads: 64
+# Proxies above this latency are reported as SLOW but remain saveable.
+slow_threshold_ms: 2000
+
+# Only these proxy types are scraped and checked.
+proxy_types:
+  - http
+  - https
+  - socks4
+  - socks5
+
+# The checker connects through each proxy to this single public URL.
+# No credentials are ever attempted.
+probe_url: https://example.com/
+
+# When true, history.txt is included in Check and Scrape + Check runs.
+check_history: true
+history_file: history.txt
+# Optional local input file for the Check command.
+input_file: proxies.txt
+results_dir: results
+
+# Bounds to keep a large public list manageable.
+max_proxies_per_source: 10000
+max_total_proxies: 50000
+user_agent: "InstaProxy/0.1 (public proxy health checker)"
+# One raw HTTP(S) URL per line, resolved relative to this YAML file.
+# Add or remove URLs directly in source.txt. Use null to disable file loading.
+# Types are inferred from the URL path/query; untyped lists default to HTTP.
+sources_file: source.txt
+
+# Optional additional sources with an explicit type hint (URLs are deduplicated).
+# No hidden built-in sources are fetched.
+sources: []
+# Example:
+# sources:
+#   - name: Custom list
+#     url: https://example.com/proxies.txt
+#     proxy_type: socks5
+#     enabled: true
